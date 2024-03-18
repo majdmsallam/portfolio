@@ -12,7 +12,7 @@ const Home = () => {
             </div>
             <nav className={classes.social}>
                 <ul>
-                    <li><a href="">Majd's CV <i class="fa-regular fa-file-pdf"></i></a></li>
+                    <li><a>Majd's CV <i class="fa-regular fa-file-pdf"></i></a></li>
                     <li><a href="https://github.com/majdmsallam">Github <i class="fa fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/majd-msallam-28282b20a/">Linkedin <i class="fa fa-linkedin"></i></a></li>
                 </ul>
