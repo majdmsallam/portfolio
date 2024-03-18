@@ -1,0 +1,106 @@
+.Topbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  position: fixed;
+  color: #070707;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  background-color: #f3f3f3;
+  z-index: 2;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto
+}
+
+.start>img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 12px;
+
+}
+
+.start>span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.end ul {
+  list-style: none;
+}
+
+.end li,
+.end a {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+.end li:hover,
+.start>span:hover,
+.end a:hover {
+  color: #1479ea
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 100px;
+  border: none;
+  z-index: 1;
+}
+
+.hamburger i {
+  font-size: 24px;
+  background-color: transparent;
+}
+
+.hamburgerMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  /* border: 1px solid #070707; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.hamburgerMenu li {
+  color: black;
+  padding: 10px 0;
+}
+
+.hamburgerMenu ul {
+  list-style: none;
+}
+
+.showMenu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .end {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 767px) {
+  .hamburgerMenu{
+    display: none;
+  }
+}
