@@ -1,6 +1,5 @@
 import React from "react";
 import classes from './Home.module.css'
-import AnchorLink from "react-anchor-link-smooth-scroll";
 const Home = () => {
     return (
         <section id="Home" className={classes.Home}>
