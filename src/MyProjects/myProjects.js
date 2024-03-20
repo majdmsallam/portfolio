@@ -1,5 +1,6 @@
 import React from "react";
 import classes from './myProjects.module.css'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const myProjects = (props) => {
     if (!props.data || !Array.isArray(props.data)) {
         return null
@@ -13,7 +14,9 @@ const myProjects = (props) => {
                 <div className={classes.info}>
                     <h3>{item.projectName}</h3>
                     <p>{item.projectDiscription}</p>
-                    <button className={classes.projectBtn}>Preview Project</button>
+                    <a href={item.projectUrl} className={classes.projectBtn}>
+                        Preview Project
+                    </a>
                 </div>
             </div>
         );

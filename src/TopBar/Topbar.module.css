@@ -42,6 +42,9 @@
   font-size: 20px;
   color: black;
 }
+.end a:last-child{
+  margin-right: 50px;
+}
 
 .end li:hover,
 .start>span:hover,

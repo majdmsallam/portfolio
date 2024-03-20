@@ -12,12 +12,12 @@ const Topbar = () => {
 
     return (
         <header>
-            <nav className={`${classes.Topbar} ${menuOpen ? classes.open : ''}`}>
+            <nav className={classes.Topbar}>
                 <div className={classes.start}>
                     <img src={MajdProfileImage} alt="Majd Profile img" />
                     <span>MAJD MSALLAM</span>
                 </div>
-                <div className={`${classes.end} ${menuOpen ? '' : ''}`}>
+                <div className={classes.end}>
                     <ul>
                         <AnchorLink href="#Home">
                             <li>HOME</li>
