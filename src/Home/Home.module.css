@@ -120,6 +120,76 @@ a {
     transform: rotate(0deg);
 }
 
+/*******************************new design **************************/
+.outerHeadings {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.outerHeadings > h1 {
+    font-size: 50px;
+}
+
+.innerHeadings {
+    border: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+.innerHeadings span {
+    position: relative;
+    color: crimson;
+    animation: ani 10s ease infinite;
+    font-size: 45px;
+}
+
+@keyframes ani {
+
+    0%,
+    100% {
+        top: 0;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    25% {
+        top: -50px;
+    }
+
+    40% {
+        top: -107px;
+    }
+
+    45% {
+        top: -107px;
+    }
+
+    60% {
+        top: -157px;
+    }
+
+    65% {
+        top: -157px;
+    }
+
+    80% {
+        top: -207px;
+    }
+
+    85% {
+        top: -207px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .mainContent h1 {
         font-size: 30px;
@@ -129,7 +199,27 @@ a {
     .mainContent h3 {
         font-size: 10px;
     }
+
     .projectBtn {
         font-size: 12px;
+    }
+    .outerHeadings > h1 {
+        font-size: 40px;
+    }
+    
+    .innerHeadings {
+        border: 1px solid #ddd;
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        overflow: hidden;
+    
+    }
+    
+    .innerHeadings span {
+        position: relative;
+        color: crimson;
+        animation: ani 10s ease infinite;
+        font-size: 30px;
     }
 }

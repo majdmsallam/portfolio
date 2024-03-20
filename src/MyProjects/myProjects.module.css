@@ -116,9 +116,10 @@
         position: relative;
         display: inline-block;
         margin: 15px;
-        padding: 15px 30px;
+        padding: 10px 30px;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
+        width: 150px;
     }
     .Taskify {
         flex-direction: column;

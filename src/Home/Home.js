@@ -4,9 +4,19 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const Home = () => {
     return (
         <section id="Home" className={classes.Home}>
-            <div className={classes.mainContent}>
-                <h1>HEY! I'M MAJD MSALLAM</h1>
-                <h3>a junior software engineer with experience in QA automation for almost a year. Currently, I'm focused on front-end development, eager to bring creativity and user-centric design to projects. Let's build something amazing together!</h3>
+            <div className={classes.outerHeadings}>
+                <h1>
+                    Hey! I'm Majd Msallam, a
+                    <div className={classes.innerHeadings}>
+                        <span>
+                            Software Engineer <br></br>
+                            Front-End Developer <br></br>
+                            Automation Engineer <br></br>
+                            UI/UX Designer <br></br>
+                            Python Developer <br></br>
+                        </span>
+                    </div>
+                </h1>
                 <AnchorLink href="#Projects" className={classes.projectBtn}>
                     PROJECTS
                 </AnchorLink>
