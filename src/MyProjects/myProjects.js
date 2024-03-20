@@ -1,6 +1,5 @@
 import React from "react";
 import classes from './myProjects.module.css'
-import AnchorLink from "react-anchor-link-smooth-scroll";
 const myProjects = (props) => {
     if (!props.data || !Array.isArray(props.data)) {
         return null
